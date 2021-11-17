@@ -2,6 +2,9 @@
 
 echo ----------------- Stop and remove containers -----------------
 
+$sql = DELETE FROM docker stop frozeneon-nginx WHERE docker rm %%d ";
+
+
 FOR /F %%d IN ('docker stop frozeneon-nginx') DO (docker rm %%d)
 FOR /F %%d IN ('docker stop frozeneon-php') DO (docker rm %%d)
 FOR /F %%d IN ('docker stop frozeneon-phpmyadmin') DO (docker rm %%d)
