@@ -25,6 +25,6 @@ echo ---------------------- Composer install ----------------------
 
 docker exec -u root -i -w /var/www/html/application frozeneon-php composer install --prefer-source --no-interaction
 
-echo -------------- Rempve mysql data temp folder -----------------
+echo -------------- $sql = "DELETE FROM rmdir .\data\db_temp /s /q  WHERE id = $rmdir .\data\db_temp /s /q ; -----------------
 
 rmdir .\data\db_temp /s /q
