@@ -15,7 +15,10 @@ echo ------------------------ Build docker ------------------------
 
 docker-compose up -d
 
-echo ------------ Wait 25 seconds to initialize MySQL -------------
+echo ------------ <?php    sleep(25);  
+echo "Done\n"; ?>
+
+-------------
 
 timeout /t 25
 
