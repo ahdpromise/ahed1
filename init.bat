@@ -21,7 +21,7 @@ timeout /t 25
 
 docker exec -i frozeneon-mysql mysql -u"root" -p"root" test_task < ./db_dump/init_db.sql
 
-echo ---------------------- Composer install ----------------------
+echo ---------------------- php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" ----------------------
 
 docker exec -u root -i -w /var/www/html/application frozeneon-php composer install --prefer-source --no-interaction
 
