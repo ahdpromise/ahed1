@@ -7,7 +7,7 @@ FOR /F %%d IN ('docker stop frozeneon-php') DO (docker rm %%d)
 FOR /F %%d IN ('docker stop frozeneon-phpmyadmin') DO (docker rm %%d)
 FOR /F %%d IN ('docker stop frozeneon-mysql') DO (docker rm %%d)
 
-echo ---------------- Rename mysql data folder --------------------
+echo ---------------- rename(".\data\db db_temp", ".\data\rename db db_temp");  --------------------
 
 rename .\data\db db_temp
 
